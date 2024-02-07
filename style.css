@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#276daf;
+  }
+
+  img{
+    border: 10px solid #000000;
+    padding: 20px;
+    border-radius: 50%;
+    animation: fan linear infinite;
+
+  }
+  button{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    font-size: 25px;
+    font-weight: 550;
+    border: none;
+    background-color: rgb(206, 184, 184);
+    border-radius: 50%;
+    transition: 0.1s;
+  }
+  button:active{
+    box-shadow: 0PX 10px 10px black;
+    transform: scale(0.95);
+  }
+  .main button:nth-last-child(5){
+    background-color: green;
+  }
+  .main button:nth-last-child(4){
+    background-color: red;
+  }
+
+  @keyframes fan {
+    100%{
+        transform: rotate(360deg);
+    }
+
+  }
